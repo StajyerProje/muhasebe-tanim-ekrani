@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Muhasebe Tanım Ekranı </title>
+        <link href="accountantDefinitionScreen.css" rel="stylesheet">
     </head>
 <style>
 input[type=text], select {
@@ -36,7 +37,7 @@ input[type=text], select {
 
 input[type=submit] {
   width: 100%;
-  background-color:#c589a5;
+  background-color:#2d52c9b0;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -47,7 +48,7 @@ input[type=submit] {
 
 input[type=submit] {
   width: 100%;
-  background-color:#c589a5;
+  background-color:#2d52c9b0;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -57,26 +58,33 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #e75c83;
+  background-color: #5c90e7;
+  
 }
 
 div {
   border-radius: 5px;
-  background-color: #bbbebf;
+  background-color: #CFD8DC;
   padding: 20px;
 }
 </style>
 <body>
-
+  <div class="menu">
+    <ul>
+        <li><a href="accountingScreen.HTML">Muhasebe Ekranı</a></li>
+        
+            
+    </ul>
+</div>
 <h3> Muhasebe Giriş Ekranı </h3>
 
 <div>
   <form  action="" >
     <label for="isim">adınızı giriniz:</label><br><br>
-    <input type="isim" id="text" name="ad" placeholder="hasan" pattern="^([a-z]{3,})" required><br><br> 
+    <input type="isim" id="text" name="ad" placeholder="çınar" pattern="^([a-z]{3,})" required><br><br> 
 
     <label for="soyad">soyadınızı giriniz:</label><br><br>
-    <input type="soyad" id="text" name="soyad" placeholder="YÜCE" pattern="^([A-Z]{3,})" required><br><br>
+    <input type="soyad" id="text" name="soyad" placeholder="AYDIN" pattern="^([A-Z]{3,})" required><br><br>
 
     <label for="telefon">telefon numaranızı giriniz:</label><br><br>
     <input type="tel" id="phone" name="phone" placeholder="5078740478" pattern="^([0-9]{10})" required><br><br>

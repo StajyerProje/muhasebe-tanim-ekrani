@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Muhasebe Ekranı </title>
+        <link href="accountantDefinitionScreen.css" rel="stylesheet">
     </head>
 <style>
 input[type=text], select {
@@ -16,7 +17,7 @@ input[type=text], select {
 
 input[type=submit] {
   width: 100%;
-  background-color:#89c1c5;
+  background-color:#2d52c9b0;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -36,30 +37,22 @@ div {
 }
 </style>
 <body>
-
+  <div class="menu">
+    <ul>
+        <li><a href="accountantDefinitionScreen.HTML">Muhasebe Ekranı</a></li>
+        
+            
+    </ul>
+</div>
 <h3> Muhasebe Giriş Ekranı </h3>
 
 <div>
-  <form action="" id="form1" onkeyup="control('form1')">
-    <label for="basvuruno">Başvuru numarası</label>
-    <input type="text" id="basvuruno" name="basvuruno" placeholder="başvuru numaranızı giriniz" >
+  <form action="" >
+     
+    <label for="basvuruno"> Başvuru Numarası:</label><br><br>
+    <input type="text" id="basvuruno" name="basvuruno" placeholder="2703199671" pattern="^([0-9]{10})" required><br><br>
     <input type="submit" value="Ara">
-  </form>
-
-  <!--<script>
-    function control(formId){
-        let invalids = document.getElementById(formId).querySelectorAll(':invalid').length,
-            button = document.getElementById(formId).querySelectorAll('button[type="submit"]');
-        console.leg(invalids);
-
-        if(invalids == 0){
-            button.removeAttiribute('disable');
-        }
-        else{
-            button.setAttribute('disable','disable');
-        }
-    }
-  </script>-->
+  </form>    
 </div>
 
 </body>
